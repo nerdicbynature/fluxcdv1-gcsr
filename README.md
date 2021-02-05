@@ -60,7 +60,8 @@ Original instruction here: https://docs.fluxcd.io/en/1.21.1/tutorials/get-starte
 kubectl apply -f https://raw.githubusercontent.com/fluxcd/helm-operator/master/deploy/crds.yaml
 
  helm upgrade -i helm-operator fluxcd/helm-operator --set image.repository=nerdicbynature/fluxcdv1-gcsr-helm-operator \
-     --set image.tag=latest --set git.ssh.secretName=flux-git-deploy --set helm.versions=v3 --namespace flux
+     --set image.tag=latest --set git.ssh.secretName=flux-git-deploy --set serviceAccount.create=false \
+     --set serviceAccount.name=kfluxaccount --set helm.versions=v3 --namespace flux
 
 
 helm upgrade -i flux fluxcd/flux --set image.repository=docker.io/nerdicbynature/fluxcdv1-gcsr \
