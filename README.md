@@ -1,2 +1,3 @@
-# fluxcdv1-gcsr
-fluxcd 1.x fix that allow access of Google Cloud Source Repositories
+# fluxcd-custom
+
+Custom fluxcd container that can access Google Cloud Source Repositories via serviceaccount

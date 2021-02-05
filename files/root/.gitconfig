@@ -1,0 +1,2 @@
+[credential "https://source.developers.google.com"]
+  helper = !/opt/google-cloud-sdk/bin/git-credential-gcloud.sh
